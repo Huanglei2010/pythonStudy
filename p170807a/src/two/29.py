@@ -1,0 +1,12 @@
+import urllib.request as ulb
+import image
+import io
+def ImageScale(url,size):
+  file = io.BytesIO(ulb(url).read())
+  img = image.open(file)
+  img.show()
+
+
+ImageScale("https://www.baidu.com/baidu.php?url=CH3K00ake_1ZOPpPvSOlQx6kP4PVHcgwoJ1ppOgRmv68A6MdmFmqcfPsGXsgd3PdYk9sFSSBzeBxHMoJa5wpUUmVL95_2f_PU0AVHyYHpw6kHclVuTeSFVG9w-UaCYcqYI3rHmGZBvWihGtJS2xc91BZ8NeT60nrUqdKVCCBJjvv25T9Hs.DD_arGS9h2Be0BjA1fJW6kl27HC8Sa9G4mLmFCR_g_3_ZgKfYt8-P1tA-BZZjdsRP5Qa1Gk_Edwnmq7aGYgqxOjOnOzoDkEvyNvyUPOQIJyAp7WW3elO7f.U1YY0ZDqTZ-YpAq88OhYCULn_ts0IjdsXgwCUveclt57ET1wGsKGUHYznjf0u1dduZCs0ZNG5yF9pywdUAY0TA-b5HD0mv-b5Hn4n0KVIjYknjDLg1csPWFxnH0krNt1PW0k0AVG5H00TMfqnHnv0ANGujYkPjfkg1cknH0s0AFG5HcsP7tznH00UynqPWnvPjnsrHm1g1TsnHmvnH04g1m1PWf1njbLPNts0Z7spyfqn0Kkmv-b5H00ThIYmyTqn0KEIhsqnH03rHDVuZGxrHb4QHwxrHb4ridbX6K9mWYsg100ugFM5H00TZ0qnHDvnjDkP1nLPfK8IM0qna3snj0snj0sn0KVIZ0qn0KbuAqs5H00ThCqn0KbugmqTAn0uMfqn0KspjYs0Aq15H00mMTqn6K8IjYs0ZPl5fKYIgnqnHT4rjRdnjfzrHfkPWR1PHfsnHD0ThNkIjYkPH0znWTknWfzrHDd0ZPGujdhmWmzPjfkPj0snj0smW6Y0AP1UHY3wR7DrRPKnRFDf1-KfYfL0A7W5HD0TA3qn0KkUgfqn0KkUgnqn0KlIjYs0Aw1mHYk0AdWgvuzUvYqn7tsg1Kxn0Kbmy4dmhNxTAk9Uh-bT1Ysg1Kxn7ts0ZK9I7qhUA7M5H00uZwGujYs0ANYpyfqQHD0mgPsmvnqn0KdTA-8mvnqn0KkUymqn0KhmLNY5H00uMGC5H00uh7Y5H00XMK_Ignqn0K9uAu_myTqnfK_uhnqn0KWThnqnHfsnHf&ck=5306.9.124.190.514.490.263.529&shh=www.baidu.com&sht=98010089_dg&us=4.0.1.0.0.0.0&ie=utf-8&f=8&ch=3&tn=98010089_dg&wd=python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B&oq=python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B&rqlang=cn&euri=3965415",10)
+
+#http://www.jb51.net/article/66546.htm
